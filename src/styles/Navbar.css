@@ -1,0 +1,125 @@
+.custom-container {
+    margin-top: 4.5rem; /* Adjusted to match your requirement */
+}
+
+.navbar {
+    position: relative;
+    z-index: 2000;
+    display: flex;
+    justify-content: space-between; /* Ensure items are spaced evenly */
+    align-items: center; /* Align items vertically */
+    padding: 0 2rem; /* Add padding to create space between navbar items */
+}
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 18px !important;
+    color: #3d3d3d !important;
+    margin-left: 3rem;
+}
+
+.navbar-collapse{
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    margin-right: 3rem;
+}
+
+.navbar-toggler{
+    display: flex;
+    justify-content: flex-end; /* Align items to the right */
+    margin-right: 3rem;
+}
+.nav-item {
+    margin-right: 2rem;
+    font-size: 15px;
+}
+
+
+
+.navbar-toggler {
+    /* Remove border from the button */
+    border: none !important;
+}
+
+
+.navbar-close-icon {
+    /* Add styles for the cross menu icon */
+    font-size: 2rem; /* Set the font size to adjust the icon size */
+}
+
+
+/* Default styles for navbar-collapse */
+.navbar-collapse {
+    transition: all 0.3s ease; /* Add transition for smooth animation */
+}
+
+/* Media query for screens below 500px */
+@media (max-width: 574px) {
+    .navbar-collapse {
+        position: fixed; /* Fix the position to cover the screen */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+        z-index: 1000; /* Higher z-index to appear above other content */
+        display: flex;
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically */
+        flex-direction: column; /* Arrange items vertically */
+        opacity: 0; /* Initially hidden */
+        pointer-events: none; /* Disable interaction */
+        visibility: hidden; /* Initially hidden */
+        transition: top 0.55s ease-in-out, opacity 0.25s ease-in-out; /* Smooth transition for both top and opacity */
+    }
+
+
+    .navbar-collapse.show {
+        opacity: 1; /* Show the collapsed navbar when 'show' class is applied */
+        pointer-events: auto; /* Enable pointer events */
+        visibility: visible; /* Show the collapsed navbar */
+    }
+
+    .nav-item{
+        margin-bottom: 1rem;
+        text-transform: uppercase;
+        font-size: 18px;
+    }
+    .navbar-toggler {
+       margin-right: 1.5rem ;
+        z-index: 1001;
+        box-shadow: none  !important; /* Ensure the menu icon appears above the collapsed navbar */
+    }
+
+    .navbar-brand {
+         z-index: 1001;
+         margin-left: 1.5rem;
+    }
+
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Center the nav items horizontally */
+        justify-content: center; /* Center the nav items vertically */
+        height: 100%; /* Ensure nav takes full height */
+        text-align: center; /* Center the nav items text */
+    }
+
+    .nav-item {
+        margin: 0.5rem 0; /* Add margin between nav items */
+    }
+  
+}
+
+
+@media (max-width: 250px) {
+
+  .navbar-brand{
+    margin-left: 0.2rem;
+  }
+
+  .navbar-toggler{
+    margin-right: 0.2rem;
+  }
+}

@@ -1,0 +1,104 @@
+h1,h2{
+    color:#3a3a3a;
+}
+
+/* IntroStyles.css */
+.intro-container {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    text-align: center;
+}
+
+.intro-heading{
+    padding-top: 0.2rem;
+}
+
+.intro-heading {
+    margin: 0;
+}
+
+.italic-text{
+    font-style: italic;
+}
+
+
+/* styles.css */
+/* styles.css */
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 2rem;
+    cursor: pointer;
+    border-radius: 0.8rem;
+    padding: 1rem;
+}
+
+.center-image {
+    width: 100%; /* Ensure the image takes the full width of the container */
+    height: auto; /* Maintain the aspect ratio */
+    max-width: 500px; /* Adjust the maximum width as needed */
+    min-width: 400px;
+    border-radius: 0.8rem; /* Optional: add some border radius to the image */
+}
+
+.project-text {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.project-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+
+.project-description {
+    font-size: 1rem;
+    color: #333; /* Adjust color as needed */
+}
+
+
+/* Footer.css */
+.footer {
+    padding: 2rem 0; /* Add space at top and bottom */
+}
+
+.footer-line {
+    border-top: 1px solid #ccc; /* Thin line separator */
+}
+
+.footer-icon {
+    margin-right: 1.5rem; /* Add space between icons */
+    color: #333; /* Icon color */
+}
+
+.footer-icon:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+
+.about-heading{
+    margin: 4rem;
+}
+
+
+@media (max-width: 574px){
+    .center-image {
+ 
+        max-width: 400px; /* Adjust the maximum width as needed */
+        min-width: 200px;
+  
+    }
+}
+
+@media (max-width: 250px){
+
+    .center-image {
+ 
+        max-width: 200px; /* Adjust the maximum width as needed */
+        min-width: 150px;
+  
+    }
+}
